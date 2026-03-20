@@ -1,0 +1,7 @@
+services:
+  dasoft-app:
+    build: .
+    container_name: dasoft_container
+    ports:
+      - "8080:80"
+    restart: always

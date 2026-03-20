@@ -2,13 +2,51 @@ import React from 'react';
 import TiltedCard from "../Components/TiltedCard";
 import LightRays from '../Components/LightRays';
 
+// 1. IMPORTATION DES ASSETS (Indispensable pour le build Docker)
+import apixImg from '../assets/Apix.avif';
+import digifaImg from '../assets/Digifa.webp';
+import klutImg from '../assets/klut.webp';
+import yrosImg from '../assets/Yros.avif';
+import entreImg from '../assets/Entre.jpeg';
+import weplImg from '../assets/Wepl.avif';
+
 const PROJECTS = [
-  { id: 1, title: "APIX", description: "Solution SaaS de gestion de planning.", image: "./src/assets/Apix.avif" },
-  { id: 2, title: "ENDEV DIGIFA", description: "Plateforme dématérialisée des dépôts et de gestion des investissements.", image: "./src/assets/Digifa.webp" },
-  { id: 3, title: "KLUT", description: "Plateforme de gestions des RH.", image: "./src/assets/klut.webp" },
-  { id: 4, title: "YROS", description: "Plateforme de gestion de paie.", image: "./src/assets/Yros.avif" },
-  { id: 5, title: "ESOA", description: "Vitrine de Entrepreneur State Of Africa.", image: "./src/assets/Entre.jpeg" },
-  { id: 6, title: "WEPLANIFY", description: "Solution Saas pour réduire la complexité de création de plannings.", image: "./src/assets/Wepl.avif" }
+  { 
+    id: 1, 
+    title: "APIX", 
+    description: "Solution SaaS de gestion de planning.", 
+    image: apixImg 
+  },
+  { 
+    id: 2, 
+    title: "ENDEV DIGIFA", 
+    description: "Plateforme dématérialisée des dépôts et de gestion des investissements.", 
+    image: digifaImg 
+  },
+  { 
+    id: 3, 
+    title: "KLUT", 
+    description: "Plateforme de gestions des RH.", 
+    image: klutImg 
+  },
+  { 
+    id: 4, 
+    title: "YROS", 
+    description: "Plateforme de gestion de paie.", 
+    image: yrosImg 
+  },
+  { 
+    id: 5, 
+    title: "ESOA", 
+    description: "Vitrine de Entrepreneur State Of Africa.", 
+    image: entreImg 
+  },
+  { 
+    id: 6, 
+    title: "WEPLANIFY", 
+    description: "Solution Saas pour réduire la complexité de création de plannings.", 
+    image: weplImg 
+  }
 ];
 
 export default function Realisations() {
@@ -29,21 +67,25 @@ export default function Realisations() {
       </div>
 
       <div className="relative z-10 container mx-auto px-6 py-20">
+      
         <header className="text-center mb-24 relative z-20">
           <h1 className="text-6xl md:text-8xl font-black text-black tracking-tighter uppercase italic drop-shadow-sm">
             DASOFT <span className="text-gray-500 opacity-50">LABS</span>
           </h1>
-          <p className="text-gray-400 font-medium tracking-[0.5em] uppercase text-xs mt-4">Innovation & Solutions Digital </p>
+          <p className="text-gray-400 font-medium tracking-[0.5em] uppercase text-xs mt-4">
+            Innovation & Solutions Digital
+          </p>
         </header>
 
+     
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {PROJECTS.map((project) => (
             <div key={project.id} className="flex flex-col group relative z-10">
               
-        
+            
               <div className="flex justify-center mb-8 relative z-20">
                 <TiltedCard
-                  imageSrc={project.image}
+                  imageSrc={project.image} 
                   altText={project.title}
                   captionText={project.title}
                   containerHeight="350px"
@@ -57,7 +99,6 @@ export default function Realisations() {
                 />
               </div>
 
-             
               <div className="mx-4 p-8 bg-white border border-gray-100 rounded-3xl shadow-lg relative z-10 transition-all duration-300 group-hover:border-gray-200 group-hover:shadow-2xl">
                 <h3 className="text-black font-black text-xl mb-2 uppercase tracking-tight">
                   {project.title}
