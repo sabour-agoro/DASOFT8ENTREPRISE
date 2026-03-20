@@ -12,3 +12,14 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes infinite-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-infinite-scroll-custom {
+  display: flex;
+  width: max-content;
+  animation: infinite-scroll 25s linear infinite;
+}
