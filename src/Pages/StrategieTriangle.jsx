@@ -126,7 +126,9 @@ const StrategieTriangle = () => {
                   alt={stack.name}
                   className="w-8 h-8 opacity-40 group-hover:opacity-100 group-hover:brightness-125 group-hover:filter group-hover:invert-[45%] group-hover:sepia-[95%] group-hover:saturate-[400%] group-hover:hue-rotate-[75deg] transition-all duration-300"
                 />
+                
               </div>
+              
               <span className="text-[9px] font-black tracking-[0.2em] text-gray-600 group-hover:text-white transition-colors">
                 {stack.name}
               </span>
