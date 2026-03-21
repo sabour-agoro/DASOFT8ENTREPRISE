@@ -237,13 +237,16 @@ function createStackedPlanesBufferGeometry(n, width, height, spacing, heightSegm
 
     for (let i = 0; i < n; i++) {
         const xOffset = xOffsetBase + i * (width + spacing);
-        const uvXOffset = Math.random() * 300;
         const uvYOffset = Math.random() * 300;
+        const uvXOffset = Math.random() * 300;
+       
 
         for (let j = 0; j <= heightSegments; j++) {
             const y = height * (j / heightSegments - 0.5);
             const v0 = [xOffset, y, 0];
             const v1 = [xOffset + width, y, 0];
+           
+            
             positions.set([...v0, ...v1], vertexOffset * 3);
 
             const uvY = j / heightSegments;

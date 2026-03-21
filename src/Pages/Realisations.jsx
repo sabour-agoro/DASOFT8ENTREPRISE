@@ -5,10 +5,11 @@ import LightRays from '../Components/LightRays';
 // 1. IMPORTATION DES ASSETS (Indispensable pour le build Docker)
 import apixImg from '../assets/Apix.avif';
 import digifaImg from '../assets/Digifa.webp';
-import klutImg from '../assets/klut.webp';
+import klutImg from '../assets/klut.png';
 import yrosImg from '../assets/Yros.avif';
 import entreImg from '../assets/Entre.jpeg';
 import weplImg from '../assets/Wepl.avif';
+import dmxImg from '../assets/dmx.png';
 
 const PROJECTS = [
   { 
@@ -46,6 +47,12 @@ const PROJECTS = [
     title: "WEPLANIFY", 
     description: "Solution Saas pour réduire la complexité de création de plannings.", 
     image: weplImg 
+  },
+   { 
+    id: 7, 
+    title: "DMX", 
+    description: "Plateforme de Dakar Music Expo", 
+    image: dmxImg 
   }
 ];
 

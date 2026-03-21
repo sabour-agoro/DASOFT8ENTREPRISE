@@ -3,7 +3,7 @@ import React from "react";
 const StrategieTriangle = () => {
   const locations = [
     { ville: "Dakar", pays: "SÉNÉGAL", role: "CENTRE D'INNOVATION" },
-    { ville: "Auxerre", pays: "FRANCE", role: "CONSEIL STRATÉGIQUE & PONT" },
+    { ville: "Paris", pays: "FRANCE", role: "CONSEIL STRATÉGIQUE & PONT" },
     { ville: "Lomé", pays: "TOGO", role: "PÔLE DE DÉV & INCUBATEUR DE TALENTS" },
   ];
 
@@ -35,7 +35,7 @@ const StrategieTriangle = () => {
               <span className="text-white italic">STRATÉGIQUE</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-lg leading-relaxed font-medium">
-             Notre présence à Dakar, Auxerre et Lomé crée un pont unique pour le talent, 
+             Notre présence à Dakar, Paris et Lomé crée un pont unique pour le talent, 
               la technologie et la connaissance du marché, nous permettant de fournir 
               des solutions aux standards mondiaux avec un contexte local profond.
             </p>
@@ -80,7 +80,7 @@ const StrategieTriangle = () => {
             <div className="absolute top-[18%] flex flex-col items-center">
               <div className="w-3 h-3 rounded-full bg-[#0f9b0f] shadow-[0_0_15px_#0f9b0f] z-10"></div>
               <div className="mt-2 flex flex-col items-center">
-                <span className="text-[12px] font-black uppercase tracking-widest">Auxerre</span>
+                <span className="text-[12px] font-black uppercase tracking-widest">Paris</span>
                 <span className="text-[8px] text-blue-400 font-bold tracking-tighter uppercase">France</span>
               </div>
             </div>
@@ -126,7 +126,9 @@ const StrategieTriangle = () => {
                   alt={stack.name}
                   className="w-8 h-8 opacity-40 group-hover:opacity-100 group-hover:brightness-125 group-hover:filter group-hover:invert-[45%] group-hover:sepia-[95%] group-hover:saturate-[400%] group-hover:hue-rotate-[75deg] transition-all duration-300"
                 />
+                
               </div>
+              
               <span className="text-[9px] font-black tracking-[0.2em] text-gray-600 group-hover:text-white transition-colors">
                 {stack.name}
               </span>

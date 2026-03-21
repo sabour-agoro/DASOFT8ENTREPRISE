@@ -27,7 +27,7 @@ const Header = () => {
       bgColor: "#ffffff",
       textColor: "#000000",
       links: [
-        { label: "Nous Écrire", href: "mailto:contact@dasoft.tg" },
+        { label: "Nous Écrire", href: "#projet" },
         { label: "Localisation", href: "/#footer" } 
       ]
     }
