@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Instagram, Linkedin, MessageCircle, Copy, Check } from 'lucide-react'; 
 
 export default function Footer() {
-  const email = "dasoft@gmail.com";
-  const whatsappNumber = "33000000000"; 
+  const email = "dasoft.entreprise@gmail.com";
+  const whatsappNumber = "22899752327"; 
   const instagramUrl = "https://www.instagram.com/das_oft";
   const linkedinUrl = "https://www.linkedin.com/company/dasoft-tg";
 
