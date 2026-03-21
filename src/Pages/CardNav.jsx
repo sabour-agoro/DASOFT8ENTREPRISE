@@ -84,6 +84,12 @@ const CardNav = ({
   };
 
   const handleLinkClick = (e, href) => {
+    if (href === "#projet") {
+      e.preventDefault();
+      setIsProjetOpen(true);
+      return;
+    }
+
     closeMenu();
     if (href.includes("#")) {
       const [path, hash] = href.split("#");

@@ -48,7 +48,7 @@ const Projet = ({ isOpen, onClose }) => {
     TitleProject: '',
     projectType: 'Solution SaaS / Cloud',
     description: '',
-    budget: '1M - 5M CFA',
+    budget: '',
     country: ''
   });
 
@@ -115,13 +115,10 @@ const Projet = ({ isOpen, onClose }) => {
               <div className="py-6 space-y-6">
                 <textarea name="description" value={formData.description} onChange={handleChange} placeholder="Description..." rows={3} className="w-full bg-black/80 border border-white/5 rounded-2xl p-5 text-white focus:border-white outline-none resize-none" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <CustomSelect 
-                    label="Estimation Budgétaire" 
-                    name="budget" 
-                    value={formData.budget} 
-                    options={["-1M CFA","1M - 5M CFA", "+15M CFA"]} 
-                    onChange={handleChange} 
-                  />
+                  <div className="space-y-3">
+                    <label className="text-[11px] uppercase tracking-[0.4em] text-gray-500 font-bold block">Estimation Budgétaire</label>
+                    <input name="budget" value={formData.budget} onChange={handleChange} placeholder="Ex: 5M CFA/$/£..." className="w-full bg-black/80 border border-white/5 rounded-2xl p-5 text-white outline-none focus:border-white" />
+                  </div>
                   <div className="space-y-3">
                     <label className="text-[11px] uppercase tracking-[0.4em] text-gray-500 font-bold block">Pays</label>
                     <input name="country" value={formData.country} onChange={handleChange} placeholder="Togo..." className="w-full bg-black/80 border border-white/5 rounded-2xl p-5 text-white outline-none focus:border-white" />
@@ -140,7 +137,7 @@ const Projet = ({ isOpen, onClose }) => {
                     ? "Merci. Notre équipe vous contactera dans les 36 heures." 
                     : status === 'error' 
                     ? "Une erreur est survenue lors de la transmission." 
-                    : "Votre vision est prête à être déployée."}
+                    : "Votre vision est prête à être déployée. Notre équipe vous contactera dans les 36 heures qui suivent."}
                 </p>
               </div>
             </Step>

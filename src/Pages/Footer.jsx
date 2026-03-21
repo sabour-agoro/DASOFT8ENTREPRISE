@@ -50,7 +50,7 @@ export default function Footer() {
               <span className="text-gray-400">Dakar:</span><span>Sénégal</span>
             </li>
             <li className="flex justify-between border-b border-white/5 pb-2">
-              <span className="text-gray-400 uppercase">Auxerre</span><span>France</span>
+              <span className="text-gray-400 uppercase">Paris</span><span>France</span>
             </li>
             <li className="flex justify-between border-b border-white/5 pb-2">
               <span className="text-gray-400">Lomé:</span><span>Togo</span>
