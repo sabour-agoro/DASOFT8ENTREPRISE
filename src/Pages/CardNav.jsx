@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link,  useLocation } from 'react-router-dom';
 import Projet from './Projet'; 
 
 
@@ -26,7 +26,7 @@ const CardNav = ({
   const cardsRef = useRef([]);
   const tlRef = useRef(null);
   
-  const navigate = useNavigate();
+  
   const location = useLocation();
 
   const calculateHeight = () => {
